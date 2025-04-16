@@ -3,12 +3,11 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview",
 		"postbuild": "copy build\\index.html build\\404.html",
 		"deploy": "npm run build && gh-pages -d build --repo=https://github.com/mtxted/wedding-invitation.git"
 	},
+
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20250404.0",
 		"@sveltejs/adapter-auto": "^3.3.1",
