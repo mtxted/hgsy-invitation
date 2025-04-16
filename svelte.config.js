@@ -9,10 +9,10 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: null
+			fallback: 'index.html'
 		}),
 		paths: {
-			base: '/wedding-invitation'
+			base: '/wedding-invitation'  // ← GitHub 저장소 이름!
 		},
 	}
 };
