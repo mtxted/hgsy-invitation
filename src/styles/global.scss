@@ -1,0 +1,169 @@
+@use "variables" as *;
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+.kr {
+	font-family: 'Pretendard', sans-serif;
+	color: $font-color-default;
+	word-break: keep-all;
+
+}
+
+.en {
+	font-family: 'Pretendard', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-display: block;
+	color: $font-color-default;
+}
+
+.en-sacramento {
+	font-family: 'Sacramento', serif;
+	font-weight: 400;
+	font-style: normal;
+	color: $font-color-default;
+}
+
+:root {
+	font-size: 0.9375em; // 15px when default is 16px
+
+	@include for-range($mobile-md) {
+		font-size: 1em;
+	}
+
+	@include for-range($mobile-lg) {
+		font-size: 1.0625em; // 17px when default is 16px
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	background-color: $bg-color-1;
+}
+
+body {
+	opacity: 0;
+	transition: opacity 0.5s ease-in;
+}
+
+body.loaded {
+	opacity: 1;
+}
+
+img,
+picture,
+video,
+canvas {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+input[type='text'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+section.cover,
+section.letter,
+section.rsvp,
+section.gallery,
+section.calendar,
+section.location {
+	max-width: $content-max-width;
+	margin: auto;
+}
