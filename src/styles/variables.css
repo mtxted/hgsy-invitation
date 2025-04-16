@@ -1,0 +1,19 @@
+.input-focused {
+  outline: solid;
+  outline-width: 3px;
+  outline-color: rgb(114, 187, 223);
+}
+
+.title-font-kr {
+  color: #B99493;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.title-font-en {
+  color: #B99493;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=variables.css.map */
