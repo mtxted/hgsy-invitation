@@ -5,6 +5,10 @@ node_modules
 .vercel
 /.svelte-kit
 /build
+!/build/.nojekyll
+!/build/404.html
+!/build/index.html
+!/build/_app
 
 # OS
 .DS_Store
